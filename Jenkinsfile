@@ -9,9 +9,6 @@ node{
     post{ 
         echo "Build Success. proceeding to deployment"
     }
-    stage('deploy'){
-       deploy adapters: [tomcat9(credentialsId: 'Tomcat', 
-        path: '', url: 'http://3.16.27.161:8070/')], contextPath: null, 
-        war: '**/*.war'
-    }
+   
+   
 }
