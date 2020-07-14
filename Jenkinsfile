@@ -6,9 +6,8 @@ node{
     stage('build'){ 
          sh '${mvnhome}/bin/mvn clean install'
     }
-    post{ 
-        echo "Build Success. proceeding to deployment"
-    }
+  
+    
    
    
 }
